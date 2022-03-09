@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.opos.mobaddemo.activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/banner_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/banner_bn" />
+
+            <Button
+                android:id="@+id/interstitial_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/interstitial_bn" />
+
+            <Button
+                android:id="@+id/interstitial_video_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interstitial_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/interstitial_video_bn" />
+
+            <Button
+                android:id="@+id/native_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interstitial_video_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/native_bn" />
+
+            <Button
+                android:id="@+id/native_advance_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/native_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/native_advance_bn" />
+
+            <Button
+                android:id="@+id/native_reward_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/native_advance_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/native_reward_bn" />
+
+            <Button
+                android:id="@+id/native_templet_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/native_reward_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/native_templet_bn" />
+
+            <Button
+                android:id="@+id/reward_video_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/native_templet_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/reward_video_bn" />
+
+            <Button
+                android:id="@+id/contentad_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reward_video_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/contentad_btn" />
+
+            <Button
+                android:id="@+id/mix_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contentad_btn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/mix_bn" />
+
+            <Button
+                android:id="@+id/hot_splash_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mix_bn"
+                android:layout_marginTop="10dp"
+                android:onClick="onBnClick"
+                android:text="@string/hot_splash_bn" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.opos.mobaddemo.nativetemplate.NativeTempletNormalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/width_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/native_templet_ad_width" />
+
+        <EditText
+            android:id="@+id/width_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/width_tv"
+            android:layout_toRightOf="@id/width_tv"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/height_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/width_tv"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/native_templet_ad_height" />
+
+        <EditText
+            android:id="@+id/height_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/height_tv"
+            android:layout_toRightOf="@id/height_tv"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/load_ad_bn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/height_et"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="16dp"
+            android:onClick="onBnClick"
+            android:text="@string/load_ad_bn" />
+
+        <Button
+            android:id="@+id/destroy_ad_bn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/height_et"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="48dp"
+            android:onClick="onBnClick"
+            android:text="@string/destroy_ad_bn" />
+
+        <RelativeLayout
+            android:id="@+id/ad_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load_ad_bn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

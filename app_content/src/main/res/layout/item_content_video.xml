@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heytap.msp.mobad.api.params.ContentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_item_padding">
+
+        <TextView
+            android:id="@+id/item_content_video_title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title" />
+
+
+        <com.heytap.msp.mobad.api.params.MediaView
+            android:id="@+id/item_content_video_mediaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_content_video_title"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/item_content_video_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_content_video_mediaView"
+            android:layout_alignTop="@id/item_content_video_mediaView"
+            android:layout_alignRight="@id/item_content_video_mediaView"
+            android:layout_alignBottom="@id/item_content_video_mediaView">
+
+            <ImageView
+                android:id="@+id/item_content_video_hover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_play" />
+
+            <TextView
+                android:id="@+id/item_content_video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/item_content_video_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_content_video_mediaView"
+            android:layout_alignTop="@id/item_content_video_mediaView"
+            android:layout_alignRight="@id/item_content_video_mediaView"
+            android:layout_alignBottom="@id/item_content_video_mediaView" />
+
+
+        <TextView
+            android:id="@+id/item_content_video_tag"
+            style="@style/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_content_video_mediaView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</com.heytap.msp.mobad.api.params.ContentContainer>

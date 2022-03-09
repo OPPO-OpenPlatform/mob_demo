@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opos.mobaddemo.banner">
+
+    <application>
+        <activity
+            android:name="com.opos.mobaddemo.banner.BannerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+    </application>
+</manifest>

@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+}
+repositories {
+    flatDir {
+        dirs '../app/libs'   // aar目录
+    }
+}
+dependencies {
+    if (rootProject.ext.isMavenDependencies) {
+        compileOnly rootProject.ext.mavenDependencies
+    } else {
+        //implementation(name: 'mobad_normal_pub_395004_2021_08_19', ext: 'aar')
+        /*
+        * 请依赖正确的版本，此写法默认依赖app/libs/*.aar所有aar
+        * */
+        fileTree(dir: '../app/libs', include: '*.aar').each { File file ->
+            def name = file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name };
+            implementation(name: name, ext: 'aar')
+        }
+    }
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation project(':app_common')
+}

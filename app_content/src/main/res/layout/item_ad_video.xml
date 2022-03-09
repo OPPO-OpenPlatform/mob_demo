@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heytap.msp.mobad.api.params.ContentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_item_padding">
+
+        <TextView
+            android:id="@+id/item_ad_video_title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title" />
+
+        <com.heytap.msp.mobad.api.params.MediaView
+            android:id="@+id/item_ad_video_mediaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_ad_video_title"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/item_ad_video_btn"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_below="@id/item_ad_video_mediaView"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_radius"
+            android:text="立即下载"
+            android:gravity="center"
+            android:textColor="#3E53F1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_ad_video_tag"
+            style="@style/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_ad_video_mediaView"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/item_ad_video_btn" />
+    </RelativeLayout>
+</com.heytap.msp.mobad.api.params.ContentContainer>

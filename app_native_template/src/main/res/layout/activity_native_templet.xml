@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.opos.mobaddemo.nativetemplate.NativeTempletActivity">
+
+    <Button
+        android:id="@+id/native_temple_640X320_normal_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_templet_640X320_normal_bn" />
+
+    <Button
+        android:id="@+id/native_temple_320X210_normal_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/native_temple_640X320_normal_bn"
+        android:onClick="onBnClick"
+        android:text="@string/native_templet_320X210_normal_bn" />
+
+    <Button
+        android:id="@+id/native_temple_group_320X210_normal_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/native_temple_320X210_normal_bn"
+        android:onClick="onBnClick"
+        android:text="@string/native_templet_group_320X210_normal_bn" />
+
+    <Button
+        android:id="@+id/native_temple_640X320_recycler_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/native_temple_group_320X210_normal_bn"
+        android:onClick="onBnClick"
+        android:text="@string/native_templet_640X320_recycler_bn" />
+
+    <Button
+        android:id="@+id/native_temple_320X210_recycler_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_temple_640X320_recycler_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_templet_320X210_recycler_bn" />
+
+    <Button
+        android:id="@+id/native_temple_group_320X210_recycler_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_temple_320X210_recycler_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_templet_group_320X210_recycler_bn" />
+
+
+</RelativeLayout>

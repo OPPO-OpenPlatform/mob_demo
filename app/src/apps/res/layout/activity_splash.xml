@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bg_color"
+    >
+
+    <!--底部区域高度136dp最佳-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/splash_bottom_area" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opos.mobaddemo.nativead">
+    <application>
+        <activity
+            android:name=".NativeAdvanceVideoRecyclerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeAdvanceVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeRewardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeRewardNormalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeRewardRecyclerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeAdvanceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeAdvance320X210Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeAdvance512X512Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeAdvance640X320Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeAdvanceGroup320X210Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.opos.mobaddemo.nativead.NativeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--add 2018-05-19-->
+        <activity
+            android:name="com.opos.mobaddemo.nativead.Native512X512Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.opos.mobaddemo.nativead.Native640X320Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.opos.mobaddemo.nativead.Native320X210Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.opos.mobaddemo.nativead.NativeGroup320X210Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="com.opos.mobaddemo.nativead.NativeMixActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+
+    </application>
+</manifest>

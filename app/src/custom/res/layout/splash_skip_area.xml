@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heytap.msp.mobad.api.params.SplashSkipView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 请将展示的view添加到SplashSkipView容器中 -->
+    <TextView
+        android:id="@+id/splash_skip_tv"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/background_circle"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+
+</com.heytap.msp.mobad.api.params.SplashSkipView>
+

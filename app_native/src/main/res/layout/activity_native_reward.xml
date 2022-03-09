@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.opos.mobaddemo.nativead.NativeActivity">
+
+    <Button
+        android:id="@+id/native_reward_normal_install_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_reward_normal_install_bn" />
+
+    <Button
+        android:id="@+id/native_reward_normal_launch_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_reward_normal_install_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_reward_normal_launch_bn" />
+
+    <Button
+        android:id="@+id/native_reward_recycler_view_install_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_reward_normal_launch_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_reward_recycler_view_install_bn" />
+
+    <Button
+        android:id="@+id/native_reward_recycler_view_launch_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_reward_recycler_view_install_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_reward_recycler_view_launch_bn" />
+
+</RelativeLayout>

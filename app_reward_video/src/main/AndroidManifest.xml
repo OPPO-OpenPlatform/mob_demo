@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opos.mobaddemo.rewardvideo">
+    <application>
+        <!--add 2018-04-15 reward video-->
+        <activity
+            android:name=".RewardVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--若出现黑屏但有声音的现象，可添加一下配置启动硬件加速-->
+        <!--android:hardwareAccelerated="true"-->
+    </application>
+</manifest>

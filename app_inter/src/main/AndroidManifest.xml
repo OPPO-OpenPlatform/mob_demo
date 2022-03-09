@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opos.mobaddemo.interstitial">
+    <application>
+        <activity
+            android:name=".InterstitialVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name="com.opos.mobaddemo.interstitial.InterstitialActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".InterstitialChooseActivity" />
+        <activity android:name=".InterstitialVideoChooseActivity" />
+
+    </application>
+</manifest>

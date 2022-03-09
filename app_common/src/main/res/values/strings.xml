@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HEYTAP联盟广告</string>
+    <string name="banner_bn">横幅广告</string>
+    <string name="interstitial_bn">插屏广告</string>
+    <string name="interstitial_video_bn">插屏视频广告</string>
+    <string name="mix_bn">混合场景</string>
+    <string name="contentad_btn">资讯流广告</string>
+    <string name="load_ad_bn">加载</string>
+    <string name="destroy_ad_bn">销毁</string>
+    <string name="show_ad_bn">展示</string>
+    <string name="native_bn">原生广告</string>
+    <string name="native_advance_bn">原生advance广告</string>
+    <string name="native_512X512_text_icon_bn">512X512图文下载类</string>
+    <string name="native_640X320_text_img_bn">640X320图文展示类</string>
+    <string name="native_320X210_text_img_bn">320X210图文展示类</string>
+    <string name="native_320X210_group_text_img_bn">320X210组图展示类</string>
+    <!--addIRewardVideoWidgetListener 2018-04-09-->
+    <string name="native_templet_bn">原生模板广告</string>
+    <string name="native_templet_640X320_normal_bn">普通640X320图文混合</string>
+    <string name="native_templet_320X210_normal_bn">普通320X210图文混合</string>
+    <string name="native_templet_group_320X210_normal_bn">普通3张320X210图文混合</string>
+
+    <string name="native_templet_640X320_recycler_bn">列表640X320图文混合</string>
+    <string name="native_templet_320X210_recycler_bn">列表320X210图文混合</string>
+    <string name="native_templet_group_320X210_recycler_bn">列表3张320X210图文混合</string>
+
+    <string name="native_templet_ad_width">宽【单位：dp】：</string>
+    <string name="native_templet_ad_height">高【单位：dp】：</string>
+    <!--addIRewardVideoWidgetListener 2018-04-15-->
+    <string name="reward_video_bn">激励视频广告</string>
+    <string name="req_video_bn">闯关失败，获取免费复活机会</string>
+    <!--add 2018-10-18-->
+    <string name="native_reward_bn">原生激励广告</string>
+    <string name="native_reward_normal_install_bn">普通下载完成激励</string>
+    <string name="native_reward_normal_launch_bn">普通打开完成激励</string>
+    <string name="native_reward_recycler_view_install_bn">列表下载完成激励</string>
+    <string name="native_reward_recycler_view_launch_bn">列表打开完成激励</string>
+
+    <string name="content_ad_loading_text">加载中...</string>
+    <string name="content_ad_refreshing_text">刷新中...</string>
+    <string name="content_ad_pull_refresh_text">下拉刷新</string>
+    <string name="content_ad_refresh_release_text">释放刷新</string>
+
+    <string name="native_video_text_bn">视频展示类</string>
+    <string name="native_video_text_list_bn">视频列表展示类</string>
+    <string name="native_mix_bn">原生混出广告</string>
+    <string name="inter_vertical_bn">跳转插屏竖屏广告</string>
+    <string name="inter_horizontal_bn">跳转插屏横屏广告</string>
+    <string name="inter_video_vertical_bn">插屏视频竖屏广告</string>
+    <string name="inter_video_horizontal_bn">插屏视频横屏广告</string>
+    <string name="inter_hint_txt">请输入广告位</string>
+</resources>

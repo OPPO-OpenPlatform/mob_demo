@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opos.mobaddemo.nativetemplate">
+    <application>
+        <!--add 2018-04-09 native templet-->
+        <activity
+            android:name=".NativeTempletActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeTempletNormalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".NativeTempletRecyclerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+    </application>
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opos.mobaddemo.hotsplash">
+
+    <application>
+        <activity
+            android:name=".HotSplashControlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppSplashTheme" />
+    </application>
+</manifest>

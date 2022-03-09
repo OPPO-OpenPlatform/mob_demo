@@ -1,0 +1,27 @@
+if ((new File('./app_banner')).exists()) {
+    include ':app_banner'
+}
+if ((new File('./app_inter')).exists()) {
+    include ':app_inter'
+}
+if ((new File('./app_banner')).exists() && (new File('./app_inter')).exists()) {
+    include ':app_mix'
+}
+if ((new File('./app_native')).exists()) {
+    include ':app_native'
+}
+if ((new File('./app_native_template')).exists()) {
+    include ':app_native_template'
+}
+if ((new File('./app_reward_video')).exists()) {
+    include ':app_reward_video'
+}
+if ((new File('./app_content')).exists()) {
+    include ':app_content'
+}
+if ((new File('./app_hotsplash')).exists()) {
+    include ':app_hotsplash'
+}
+include ':app_common'
+include ':app'
+

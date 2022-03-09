@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.opos.mobaddemo.nativead.NativeActivity">
+
+    <Button
+        android:id="@+id/native_512X512_text_icon_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_512X512_text_icon_bn" />
+
+    <Button
+        android:id="@+id/native_640X320_text_img_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_512X512_text_icon_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_640X320_text_img_bn" />
+
+    <Button
+        android:id="@+id/native_320X210_text_img_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_640X320_text_img_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_320X210_text_img_bn" />
+
+    <Button
+        android:id="@+id/native_group_320X210_text_img_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_320X210_text_img_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_320X210_group_text_img_bn" />
+
+    <Button
+        android:id="@+id/native_video_text_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_group_320X210_text_img_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_video_text_bn" />
+
+    <Button
+        android:id="@+id/native_recycle_view_video_text_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_video_text_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_video_text_list_bn" />
+
+    <Button
+        android:id="@+id/native_mix_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_recycle_view_video_text_bn"
+        android:layout_marginTop="10dp"
+        android:onClick="onBnClick"
+        android:text="@string/native_mix_bn" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heytap.msp.mobad.api.params.ContentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_item_padding">
+
+
+        <ImageView
+            android:id="@+id/item_content_txt_img_pic"
+            android:layout_width="110dp"
+            android:layout_height="71dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/item_content_txt_img_title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_content_txt_img_pic"
+            android:maxLines="3"
+            android:minHeight="71dp"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/item_content_txt_img_tag"
+            style="@style/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_content_txt_img_title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+</com.heytap.msp.mobad.api.params.ContentContainer>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heytap.msp.mobad.api.params.ContentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_item_padding">
+
+        <ImageView
+            android:id="@+id/item_ad_small_img_pic"
+            android:layout_width="110dp"
+            android:layout_height="71dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/item_ad_small_img_title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/item_ad_small_img_pic"
+            android:maxLines="3"
+            android:minHeight="71dp"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/item_ad_small_img_btn"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_below="@id/item_ad_small_img_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_radius"
+            android:text="立即下载"
+            android:gravity="center"
+            android:textColor="#3E53F1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_ad_small_img_tag"
+            style="@style/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_ad_small_img_title"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/item_ad_small_img_btn" />
+    </RelativeLayout>
+</com.heytap.msp.mobad.api.params.ContentContainer>

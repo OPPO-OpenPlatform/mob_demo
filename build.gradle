@@ -1,0 +1,106 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+Properties mavenProperties = new Properties()
+File configFile = new File('./config/build-config.properties')
+Boolean isMavenDep = false;
+String mavenDep;
+
+if (configFile.exists()) {
+    mavenProperties.load(configFile.newDataInputStream())
+    isMavenDep = mavenProperties.get('isMavenDep').toBoolean()
+    mavenDep = mavenProperties.get('mavenDep')
+    println "----isMavenDep:${isMavenDep}"
+    println "----mavenDep:${mavenDep}"
+}
+
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+        Properties properties = new Properties()
+        if (new File('./config/dependencies.properties').exists()) {
+            properties.load(new File('./config/dependencies.properties').newDataInputStream())
+            def mavenConfigs = properties.get("mavenConfigs.mavens")
+            if (mavenConfigs != null && !mavenConfigs.toString().isEmpty()) {
+                String[] mavens = mavenConfigs.toString().split(",")
+                for (String m : mavens) {
+                    maven {
+                        url m
+                    }
+                }
+            }
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+    tasks.withType(JavaCompile) { options.encoding = "UTF-8" }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        Properties properties = new Properties()
+        if (new File('./config/dependencies.properties').exists()) {
+            properties.load(new File('./config/dependencies.properties').newDataInputStream())
+            def mavenConfigs = properties.get("mavenConfigs.mavens")
+            if (mavenConfigs != null && !mavenConfigs.toString().isEmpty()) {
+                String[] mavens = mavenConfigs.toString().split(",")
+                for (String m : mavens) {
+                    maven {
+                        url m
+                    }
+                }
+            }
+        }
+    }
+    //skip Test tasks
+    gradle.taskGraph.whenReady {
+        tasks.each { task ->
+            if (task.name.contains("Test") || task.name.contains("test")) {
+                task.enabled = false
+            }
+        }
+    }
+    tasks.withType(JavaCompile) {
+        configure(options) {
+            incremental = true
+        }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//for all module.
+ext {
+    compileSdkVersion = 29
+    buildToolsVersion = "29.0.3"
+    //
+    minSdkVersion = 19
+    //use 7.1.1 test dangerous permissions.
+    targetSdkVersion = 26
+    //
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+    //
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+    //
+    abortOnError = false
+    //
+    isMavenDependencies = isMavenDep
+    mavenDependencies = mavenDep
+}
