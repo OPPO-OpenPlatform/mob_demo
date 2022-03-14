@@ -33,18 +33,7 @@ repositories {
     }
 }
 dependencies {
-    if (rootProject.ext.isMavenDependencies){
-        compileOnly rootProject.ext.mavenDependencies
-    } else {
-                //implementation(name: 'mobad_normal_pub_395004_2021_08_19', ext: 'aar')
-        /*
-        * 请依赖正确的版本，此写法默认依赖app/libs/*.aar所有aar
-        * */
-        fileTree(dir: '../app/libs', include: '*.aar').each { File file ->
-            def name = file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name };
-            implementation(name: name, ext: 'aar')
-        }
-    }
+    compileOnly "com.heytap.ad:mobad:4.2.2.000"
     implementation 'androidx.appcompat:appcompat:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

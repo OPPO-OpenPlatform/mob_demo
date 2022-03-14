@@ -63,19 +63,7 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.0'
 
     /*广告需要的依赖---开始*/
-    if (rootProject.ext.isMavenDependencies) {
-        implementation rootProject.ext.mavenDependencies
-    } else {
-        //implementation(name: 'mobad_normal_pub_395004_2021_08_19', ext: 'aar')
-        /*
-        * 请依赖正确的版本，此写法默认依赖app/libs/*.aar所有aar
-        * */
-        fileTree(dir: 'libs', include: '*.aar').each { File file ->
-            def name = file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name };
-            implementation(name: name, ext: 'aar')
-        }
-    }
-
+    implementation "com.heytap.ad:mobad:4.2.2.000"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.squareup.okio:okio:2.5.0'
